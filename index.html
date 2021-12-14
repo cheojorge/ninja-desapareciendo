@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Desapareciendo</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <style>
+        .continer{
+            margin: 0 auto;
+            background-color: silver;
+            width: 620px;
+            padding: 10px 20px;
+            
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            
+        }
+        button{
+            display: block;
+            margin: 20px 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide();
+            });
+            $('button').click(function(){
+            $('img').show();
+            });
+        })
+       
+    </script>
+</head>
+<body>
+    <div class="continer">
+        <h1>jQuery - assigment 1</h1>
+        <img src="./ninja.jpeg" alt="ninja">
+        <img src="./ninja.jpeg" alt="ninja">
+        <img src="./ninja.jpeg" alt="ninja">
+        <img src="./ninja.jpeg" alt="ninja">
+        <img src="./ninja.jpeg" alt="ninja">
+        <img src="./ninja.jpeg" alt="ninja">
+        <img src="./ninja.jpeg" alt="ninja">
+        <img src="./ninja.jpeg" alt="ninja">
+        <button>Restore</button>
+    </div>
+</body>
+</html>
